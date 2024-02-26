@@ -24,7 +24,7 @@ export const Footer = () => {
 					))}
 				</div>
 			</div>
-			<div className='flex self-start items-end text-white font-bold flex-col'>
+			<div className='flex self-start items-end text-white font-bold flex-col text-end pl-[80px]'>
 				{Маленький_текстик_левый_утютю.map(item => (
 					<a href={item.href}>{item.name}</a>
 				))}
