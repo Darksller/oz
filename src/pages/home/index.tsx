@@ -1,4 +1,3 @@
-import { Layout } from '@/shared/ui/layout'
 import { BannersPanel } from '@/widgets'
 import { CategoryPanel } from '@/widgets'
 import { CategoryItems } from '@/widgets'
