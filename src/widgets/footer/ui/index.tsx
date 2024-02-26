@@ -7,7 +7,7 @@ export const Footer = () => {
 				<div className='grid grid-cols-3 w-full'>
 					<div>Следите за акциями и новостями</div>
 					<div className='flex'>
-						<div className='flex flex-col items-center justify-end'>
+						<div className='flex flex-col items-center 	justify-end'>
 							<div>Оплата</div>
 							<div>Оплата</div>
 							<div>Оплата</div>

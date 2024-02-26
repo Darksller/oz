@@ -21,11 +21,11 @@ export const ProductCard = ({ data }: ProductCardProps) => {
 				</div>
 			</div>
 			<div className='flex items-end justify-between'>
-				<div className='font-black flex flex-col justify-center'>
-					<div className='text-xl pt-[9px]'>{data.price} р.</div>
-					<div className='rounded-[20px] bg-muted text-primary text-[10px] max-w-[60px] w-full flex items-center px-[7px]'>
+				<div className='flex flex-col justify-center'>
+					<div className='text-xl font-black pt-[9px]'>{data.price} р.</div>
+					<div className='font-black rounded-[10px] bg-muted text-primary text-[10px] max-w-[60px] flex items-center px-[7px] h-[15px] mt-[2px]'>
 						<img src={bonusIcon} className='pr-2' />
-						<div className='mb-[1px]'>{data.bonus}</div>
+						<div className='mb-[2px]'>{data.bonus}</div>
 					</div>
 				</div>
 				<Button variant='icon'>

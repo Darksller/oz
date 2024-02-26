@@ -10,7 +10,7 @@ type CardProps = {
 	variant?: 'default' | 'half'
 }
 
-export const Card = ({
+export const BannerCard = ({
 	className,
 	title,
 	children,
@@ -24,7 +24,7 @@ export const Card = ({
 				variant === 'default' ? { backgroundImage: `url(${image})` } : undefined
 			}
 			className={cn(
-				`w-[420px] h-[130px] text-white rounded-[20px] border border-black overflow-hidden`,
+				`w-[420px] h-[130px] text-white rounded-[20px]  overflow-hidden`,
 				variant === 'default' && `bg-cover flex items-center justify-center`,
 				variant === 'half' && `grid grid-cols-2 bg-[#F7A4B4]`,
 				className
