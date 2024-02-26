@@ -17,6 +17,9 @@ module.exports = {
 			},
 		},
 		extend: {
+			backgroundImage: {
+				body: "url('@/shared/assets/images/body.png')",
+			},
 			fontFamily: {
 				inter: ['Inter'],
 			},

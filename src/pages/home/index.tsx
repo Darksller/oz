@@ -5,7 +5,7 @@ import { CategoryItems } from '@/widgets'
 
 export const Home = () => {
 	return (
-		<Layout>
+		<>
 			<BannersPanel />
 			<CategoryPanel />
 			<CategoryItems category='Книги. Бестселлеры' className='mt-5' />
@@ -13,6 +13,6 @@ export const Home = () => {
 				category='Развлечения, творчество. Бестселлеры'
 				className='mt-5'
 			/>
-		</Layout>
+		</>
 	)
 }
