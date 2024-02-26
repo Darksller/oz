@@ -1,3 +1,4 @@
+import { ScrollToTopButton } from '@/features/scroll-to-top'
 import { BannersPanel } from '@/widgets'
 import { CategoryPanel } from '@/widgets'
 import { CategoryItems } from '@/widgets'
@@ -12,6 +13,7 @@ export const Home = () => {
 				category='Развлечения, творчество. Бестселлеры'
 				className='mt-5'
 			/>
+			<ScrollToTopButton className='mt-5 font-black text-xl w-[200px] h-[35px]' />
 		</>
 	)
 }
