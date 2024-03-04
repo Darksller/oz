@@ -1,12 +1,11 @@
 import { cn } from '@/shared/lib/utils'
-import { products } from '../model/items'
-import { ProductCard } from '@/entities/product'
+import { ProductCard, ProductsGridProps } from '@/entities/product'
 
-type CategoryItemsProps = {
-	className?: string
-	category: string
-}
-export const CategoryItems = ({ category, className }: CategoryItemsProps) => {
+export const DefaultProductsGrid = ({
+	category,
+	className,
+	data,
+}: ProductsGridProps) => {
 	return (
 		<div
 			className={cn(
@@ -19,8 +18,12 @@ export const CategoryItems = ({ category, className }: CategoryItemsProps) => {
 					{category}
 				</div>
 				<div className='bg-secondary/50 grid grid-cols-5 gap-[1px]'>
-					{products.map(product => (
-						<ProductCard key={product.name} data={product} />
+					{data.map(item => (
+						<ProductCard
+							key={item.name}
+							data={item}
+							className='bg-white py-[7px] px-[10px]'
+						/>
 					))}
 				</div>
 			</div>

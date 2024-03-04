@@ -10,7 +10,7 @@ export const Footer = () => {
 				<div>Следите за акциями и новостями</div>
 				<div className='flex gap-[6px] pl-[2px]'>
 					{Contacts.map(contact => (
-						<a href={contact.href} target={'_blank'}>
+						<a key={contact.name} href={contact.href} target={'_blank'}>
 							<img src={contact.icon} alt={contact.name} />
 						</a>
 					))}
@@ -18,7 +18,7 @@ export const Footer = () => {
 				<div className='pt-[10px]'>Скачайте мобильное приложение</div>
 				<div className='flex gap-[6px] pl-[2px]'>
 					{Downloads.map(download => (
-						<a href={download.href} target={'_blank'}>
+						<a key={download.name} href={download.href} target={'_blank'}>
 							<img src={download.icon} alt={download.name} />
 						</a>
 					))}
@@ -26,12 +26,16 @@ export const Footer = () => {
 			</div>
 			<div className='flex self-start items-end text-white font-bold flex-col text-end pl-[80px]'>
 				{Маленький_текстик_левый_утютю.map(item => (
-					<a href={item.href}>{item.name}</a>
+					<a key={item.name} href={item.href} className='w-fit'>
+						{item.name}
+					</a>
 				))}
 			</div>
-			<div className='text-white font-bold flex flex-col'>
+			<div className='text-white font-bold flex flex-col self-start'>
 				{Большой_ПРАВОславный_текст.map(item => (
-					<a href={item.href}>{item.name}</a>
+					<a key={item.name} href={item.href} className='w-fit'>
+						{item.name}
+					</a>
 				))}
 			</div>
 			<div className='flex items-end font-bold text-xs text-primary flex-col'>

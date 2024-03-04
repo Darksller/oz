@@ -10,7 +10,7 @@ import eight from '@/shared/assets/images/items/8.png'
 import nine from '@/shared/assets/images/items/9.png'
 import ten from '@/shared/assets/images/items/10.png'
 
-export const products: Product[] = [
+export const DefaultProducts: Product[] = [
 	{
 		name: 'Счастье среди лаванды',
 		description: 'Аня Матвеева, 2023',
